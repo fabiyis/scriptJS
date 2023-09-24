@@ -17,95 +17,82 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: rgba(128, 128, 128, 0.527); 
-}
+    background-color: rgba(128, 128, 128, 0.527);
+  }
   
-.heading img {
+  .logo {
     display: flex;
     align-items: center;
-    gap: 50px;
-    margin-right: 10px;
-}
+    gap: 5px;
+  }
   
-.heading img {
+  .logo img {
     width: 50px;
-    border-radius: 60px;
-    border: solid 1px rgba(251, 255, 0, 0.986);
-    padding: 3px;
-    display: flex; 
-    
-}
+    border-radius: 50px;
+  }
   
-nav p {
+  .logo h1 {
     font-size: 30px;
-    font-weight: 600;
-    color: rgb(224, 231, 180);
-    margin-left: 65px;
-    margin-top: -37px;
-
-    
-}
+    font-weight: 900;
+    color: white;
+  }
   
-ul {
+  ul {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 2rem;
-}
+  }
   
-li {
+  li {
     list-style: none;
-}
+  }
   
-a {
+  a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-}
+  }
   
-a:hover {
+  a:hover {
     border-bottom: solid 2px orangered;
     transition: 0.3s;
-}
+  }
   
-.options {
+  .options {
     padding: 2px;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px orangered;
     cursor: pointer;
     display: none;
-}
+  }
   
-main {
+  main {
     padding: 30px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8vh;
     gap: 10px;
-}
+  }
   
-main .container {
+  main .text {
     color: white;
     background-color: rgba(128, 128, 128, 0.438);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 2px 2px 2px orangered;
-    display: flex;
-    flex-direction: column;
-}
+  }
   
-main .h1 {
+  .text h1 {
     font-size: 50px;
-}
+  }
   
-.text p {
+  .text p {
     font-size: 30px;
     font-style: italic;
- }
+  }
   
-.btn {
+  .btn {
   padding: 10px 20px;
   font-size: 25px;
   font-weight: 700;
@@ -115,21 +102,20 @@ main .h1 {
   border: none;
   box-shadow: 2px 2px 2px white;
   cursor: pointer;
- }
+  }
   
-.btn:hover{
+  .btn:hover{
     background-color: tomato;
     transition: 0.3s;
-}
+  }
   
-main img {
-    width: 30%;
+  main img {
+    width: 40%;
     border-radius: 50%;
     display: block;
-
-}
+  }
   
-@media screen and (max-width: 544px) {
+  @media screen and (max-width: 544px) {
     .options {
       display: block;
     }
@@ -168,4 +154,4 @@ main img {
    .text p {
       font-size: 20px;
     }
-}
+  }
