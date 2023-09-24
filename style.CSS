@@ -18,81 +18,81 @@ nav {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: rgba(128, 128, 128, 0.527);
-  }
+}
   
-  .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 5px;
-  }
+}
   
-  .logo img {
+.logo img {
     width: 50px;
     border-radius: 50px;
-  }
+}
   
-  .logo h1 {
+.logo h1 {
     font-size: 30px;
     font-weight: 900;
     color: white;
-  }
+}
   
-  ul {
+ul {
     display: flex;
     align-items: center;
     gap: 30px;
-  }
+}
   
-  li {
+li {
     list-style: none;
-  }
+}
   
-  a {
+a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-  }
+}
   
-  a:hover {
+a:hover {
     border-bottom: solid 2px orangered;
     transition: 0.3s;
-  }
+}
   
-  .options {
+.options {
     padding: 2px;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px orangered;
     cursor: pointer;
     display: none;
-  }
+}
   
-  main {
+main {
     padding: 30px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8vh;
     gap: 10px;
-  }
+}
   
-  main .text {
+main .text {
     color: white;
     background-color: rgba(128, 128, 128, 0.438);
     padding: 20px;
     border-radius: 20px;
-  }
+}
   
-  .text h1 {
+.text h1 {
     font-size: 50px;
-  }
+}
   
-  .text p {
+.text p {
     font-size: 30px;
     font-style: italic;
-  }
+}
   
-  .btn {
+.btn {
   padding: 10px 20px;
   font-size: 25px;
   font-weight: 700;
@@ -102,20 +102,33 @@ nav {
   border: none;
   box-shadow: 2px 2px 2px white;
   cursor: pointer;
-  }
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.SignIn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px orangered;
+    cursor: pointer;
+}
   
-  .btn:hover{
+.btn:hover{
     background-color: tomato;
     transition: 0.3s;
-  }
-  
-  main img {
+}
+
+main img {
     width: 40%;
     border-radius: 50%;
     display: block;
-  }
+}
   
-  @media screen and (max-width: 544px) {
+@media screen and (max-width: 544px) {
     .options {
       display: block;
     }
@@ -124,12 +137,8 @@ nav {
       margin-top: 17vh;
     }
   
-    .open {
+    .open.links {
       display: block;
-    }
-  
-    .close {
-      display: none;
     }
   
    .links {
@@ -154,4 +163,19 @@ nav {
    .text p {
       font-size: 20px;
     }
-  }
+}
+
+@media screen and (min-width: 760px) {
+    main {
+        flex-direction: row-reverse;
+    }
+    main img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1012px) {
+    main {
+        flex-direction: row;
+    }
+}
